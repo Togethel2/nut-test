@@ -5,6 +5,7 @@
 import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
  .App {
+    padding-top: 20px;
     text-align: center;
     margin:0 auto; /* this will center the page */
     width:1280px; /*  use your width here */
@@ -66,9 +67,12 @@ const GlobalStyle = createGlobalStyle`
     justify-content: space-between;
   }
 
-  label {
+  label{
     float: left;
-    padding-left: 10px
+  }
+
+  .form-floating>label{
+    padding-left: 20px !important;
   }
 `
 export default GlobalStyle;
